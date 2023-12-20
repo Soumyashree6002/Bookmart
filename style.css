@@ -376,6 +376,11 @@ input {
     background-color: rgb(38, 249, 80);
 }
 
+.submit {
+    display: inline-block;
+    width: 10vw;
+}
+
 footer {
     height: 40vh;
 }
