@@ -437,3 +437,72 @@ footer {
         flex-direction: column;
     }
 }
+
+@media only screen and (min-width:500px) and (max-width:755px) {
+
+    html {
+        font-size: 17px;
+    }
+
+    .bigContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .review1,.review2,.review3 {
+        display: inline-flex;
+        background-color: blue;
+        border: 3px solid red;height: fit-content;
+        border-radius: 5%;
+        width: 100%;
+    }
+
+    .review2 {
+        flex-direction: row-reverse;
+        position: static;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .searchBar {
+        display: inline-block;
+        width: 80%;
+        display: flex;
+        z-index: 5;
+    }
+}
+
+@media only screen and (min-width:755px) and (max-width:1050px) {
+    .bigContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .review1,.review2,.review3 {
+        display: inline-flex;
+        background-color: blue;
+        border: 3px solid red;height: fit-content;
+        border-radius: 5%;
+        width: 100%;
+    }
+
+    .review2 {
+        flex-direction: row-reverse;
+        position: static;
+    }
+
+    .card {
+        height: fit-content;
+    }
+
+    .searchBar {
+        display: inline-block;
+        width: 80%;
+        display: flex;
+        z-index: 5;
+    }
+}
