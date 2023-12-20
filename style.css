@@ -1,0 +1,439 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 15px;
+}
+
+/* for navbar */
+nav {
+    display: flex;
+    background-color: rgb(161, 218, 244);
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+.logo img {
+    height: 35px;
+    padding: 5px
+}
+
+div ul {
+    display: flex;
+    list-style: none;
+}
+
+div ul li {
+    padding: 3px 6px;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.icon {
+    padding: 0px 3px;
+}
+
+/* for intropage */
+
+.introPage {
+    display: flex;
+}
+
+.heading {
+    padding: 20px;
+}
+
+.Title {
+    flex: 1;
+    color: rgb(209, 181, 0);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.shopName {
+    font-size: 50px;
+    color: rgb(24, 184, 248);
+}
+
+.subtitle {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.link {
+    font-size: larger;
+}
+
+.slideshow-container {
+    flex: 1;
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+}
+
+div img {
+    width: 100%;
+}
+
+.subtitle {
+    padding: 10px;
+}
+
+.link {
+    border: 3px solid rgb(49, 184, 241);
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 246, 147);
+}
+
+/* for best selling page */
+
+.bigContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.box2 {
+    display: flex;
+    margin: 5px;
+    justify-content: left;
+}
+
+.ratings {
+    display: inline-flex;
+    border: 2px solid yellowgreen;
+    background-color: green;
+    color: white;
+    justify-self: right;
+}
+
+.discount {
+    display: inline-flex;
+    /* border: 2px solid rgb(17, 0, 255); */
+    /* margin-left: 5px; */
+    background-color: red;
+    color: white;
+    margin: 1px 2px;
+    padding: 2px 10px;
+}
+
+.newPrice {
+    /* border: 2px solid green; */
+    color: red;
+    margin-right: 3px;
+}
+
+.price {
+    text-decoration-line: line-through;
+    color: rgb(56, 55, 55);
+}
+
+#addBtn1,#addBtn2,#addBtn3,#addBtn4,#addBtn5,#addBtn6,#addBtn7,#addBtn8,#addBtn9,#addBtn10,#addBtn11,#addBtn12,#addBtn13,#addBtn14 {
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* for hover modal */
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+    /* height: fit-content; */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    padding-top: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal-content {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 0%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    align-self: center;
+    height: 80vh;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 1px 2px;
+    padding: 2px 10px;
+}
+
+.close-btn:hover {
+    background-color: red;
+}
+
+#modalImage {
+    height: 480px;
+}
+
+#knowMoreBtn1,
+#knowMoreBtn2,
+#knowMoreBtn3,
+#knowMoreBtn4,
+#knowMoreBtn5,
+#knowMoreBtn6,
+#knowMoreBtn7,
+#knowMoreBtn8,
+#knowMoreBtn9,
+#knowMoreBtn10,
+#knowMoreBtn11,
+#knowMoreBtn12,
+#knowMoreBtn13,
+#knowMoreBtn14 {
+    border: 2px solid rgb(0, 79, 0);
+    background-color: aqua;
+    cursor: pointer;
+}
+
+button {
+    background-color: red;
+}
+
+/* for recommendations */
+
+.searchBar {
+    display: inline-block;
+    width: 60%;
+    display: flex;
+    z-index: 5;
+}
+
+.searchBar:hover {
+    background-color: yellow;
+}
+
+#searchbox {
+    border: none;
+    display: inline-block;
+    width: 95%;
+    margin: 0;
+    padding: 0%;
+    z-index: 1;
+}
+
+#searchbox:active {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#searchbox:hover {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: burlywood;
+}
+
+.searchBar {
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+#magnify {
+    position: relative;
+    /* left:25px; */
+    margin: 0;
+    padding: 0%;
+}
+
+/* for review section */
+
+.Reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.review1,.review2,.review3 {
+    display: inline-flex;
+    background-color: blue;
+    border: 3px solid red;
+    border-radius: 50%;
+    width: 70%;
+    height: 200px;
+}
+
+.img_person {
+    height: 150px;
+    border-radius: 50%;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    text-align: center;
+    align-self: center;
+}
+
+.personName {
+    font-weight: bolder;
+}
+
+.review2 {
+    flex-direction: row-reverse;
+    position: relative;
+    left: 200px;
+}
+
+.form {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+.fieldset {
+    margin: 10px;
+    font-size: larger;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    background-color: burlywood;
+}
+
+input {
+    width: 100%;
+    background-color: rgb(38, 249, 80);
+}
+
+footer {
+    height: 40vh;
+}
+
+.facebook img{
+    width: 26px;
+}
+
+.instagram img{
+    width: 26px;
+}
+
+.whatsapp img {
+    width: 26px;
+}
+
+.linkedin img {
+    width: 26px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 10px;
+}
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 16px;
+    }
+
+    .bigContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .introPage {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .review1,.review2,.review3 {
+        display: inline-flex;
+        background-color: blue;
+        border: 3px solid red;height: fit-content;
+        border-radius: 5%;
+        width: 100%;
+    }
+
+    .review2 {
+        flex-direction: row-reverse;
+        position: static;
+    }
+
+    .legal-links ul li {
+        display: flex;
+        flex-direction: column;
+    }
+}

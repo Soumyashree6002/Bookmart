@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <nav>
+        <!-- <div class="menu">
+            <input type="checkbox" id="check" class="box">
+            <label for="check" class="check">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </label>
+        </div> -->
+        <div class="logo">
+            <img src="book-store-logo_.jpg" alt="logo">
+        </div>
+        <div class="options">
+            <ul>
+                <li>
+                    <a href="#introPage">Home</a>
+                </li>
+                <li>
+                    <a href="#bestSelling">Best Selling</a>
+                </li>
+                <li>
+                    <a href="#recommendations">Recommendations</a>
+                </li>
+                <li>
+                    <a href="#Reviews">Reviews</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icons">
+            <span class="material-symbols-outlined">
+                favorite
+            </span>
+            <span class="material-symbols-outlined icon ">
+                shopping_cart
+            </span>
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </div>
+    </nav>
+
+    <section class="introPage" id="introPage">
+        <div class="Title">
+            <div class="content">
+                <h1 class="shopName">
+                    Bookmart
+                </h1>
+                <p class="subtitle">
+                    Where words dance and stories sing. <br> Join the celebration of literature at "Bookmart".
+                </p>
+                <a href="#bestSelling" class="link">Our Best Sellings</a>
+            </div>
+        </div>
+        <div class="slideshow-container" id="slideshow-container">
+            <div class="slide" style="display: block;">
+                <img id="firstImage" src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="image5.jpg" alt="Image 3">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bestSelling" id="bestSelling">
+        <div class="heading">
+            <h1>
+                Bookworm's Choice: Bestsellers Edition
+            </h1>
+            <p>
+                Get Lost in the Pages of Our Bestselling Masterpieces...
+            </p>
+        </div>
+        <div class="bigContainer">
+            <div class="card" onmouseover="showKnowMore(1)" onmouseout="hideKnowMore(1)">
+                <img src="bestSellingBook1.jpg" alt="Card Image 1">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Dark Psychology Secrets & Manipulation</h3>
+                    </div>
+                    <p>dark psychology can be seen as studying the human condi....</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn1" onclick="toggleButtonText(1)">Add</div>
+                    <div id="knowMoreBtn1" onclick="openModal(1)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(2)" onmouseout="hideKnowMore(2)">
+                <img src="bestSellingBook2.jpg" alt="Card Image 2">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Learning How To Fly</h3>
+                    </div>
+                    <p>Filled with warmth, inspiration and a positive attitude, Learning How to Fly is ess...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn2" onclick="toggleButtonText(2)">Add</div>
+                    <div id="knowMoreBtn2" onclick="openModal(2)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(3)" onmouseout="hideKnowMore(3)">
+                <img src="bestSellingBook3.jpg" alt="Card Image 3">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>The Art Of War</h3>
+                    </div>
+                    <p>applies to competition and conflict in general, on every level from the interpe...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn3" onclick="toggleButtonText(3)">Add</div>
+                    <div id="knowMoreBtn3" onclick="openModal(3)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(4)" onmouseout="hideKnowMore(4)">
+                <img src="bestSellingBook4.jpg" alt="Card Image 4">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>The Namesake</h3>
+                    </div>
+                    <p>the story of a Bengali immigrant family living in the U.S....</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn4" onclick="toggleButtonText(4)">Add</div>
+                    <div id="knowMoreBtn4" onclick="openModal(4)">Know More</div>
+                </div>
+            </div>
+
+            <!-- Repeat the above structure for additional cards -->
+        </div>
+    </section>
+    <section class="recommendations" id="recommendations">
+        <div class="heading">
+            <h1>
+                Top-Rated Reads
+            </h1>
+            <p>
+                Unearth literary wonders in our recommended reads...
+            </p>
+            <div class="searchBar">
+                <input type="text" name="" id="searchbox">
+                <span class="material-symbols-outlined" id="magnify">
+                    search
+                </span>
+            </div>
+        </div>
+        <div class="bigContainer">
+            <div class="card" onmouseover="showKnowMore(5)" onmouseout="hideKnowMore(5)">
+                <img src="bestSellingBook5.jpg" alt="Card Image 5">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>The Pursuit of Reputation</h3>
+                    </div>
+                    <p>Discover the art of thriving in India's ever-shifting....</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn5" onclick="toggleButtonText(5)">Add</div>
+                    <div id="knowMoreBtn5" onclick="openModal(5)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(6)" onmouseout="hideKnowMore(6)">
+                <img src="bestSellingBook6.jpg" alt="Card Image 6">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>The Freedom Manifesto</h3>
+                    </div>
+                    <p>What is your purpose, your Dharma, your innate ten....</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn6" onclick="toggleButtonText(6)">Add</div>
+                    <div id="knowMoreBtn6" onclick="openModal(6)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(7)" onmouseout="hideKnowMore(7)">
+                <img src="bestSellingBook7.jpg" alt="Card Image 7">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Don't Believe Everything You Think</h3>
+                    </div>
+                    <p>Discover how to conquer anxiety, self-doubt, and sel....</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn7" onclick="toggleButtonText(7)">Add</div>
+                    <div id="knowMoreBtn7" onclick="openModal(7)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(8)" onmouseout="hideKnowMore(8)">
+                <img src="bestSellingBook8.jpg" alt="Card Image 8">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>The Time Machine</h3>
+                    </div>
+                    <p>Embark on a captivating adventure with...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn8" onclick="toggleButtonText(8)">Add</div>
+                    <div id="knowMoreBtn8" onclick="openModal(8)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(9)" onmouseout="hideKnowMore(9)">
+                <img src="bestSellingBook9.jpg" alt="Card Image 9">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Playing Hard: A Billionaire Playboy, Fake Marriage Romance</h3>
+                    </div>
+                    <p>affair that ripped my heart out.A fake marr...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn9" onclick="toggleButtonText(9)">Add</div>
+                    <div id="knowMoreBtn9" onclick="openModal(9)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(10)" onmouseout="hideKnowMore(10)">
+                <img src="bestSellingBook10.jpg" alt="Card Image 10">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Dopamine Detox</h3>
+                    </div>
+                    <p>Do you keep procrastinating? Do you feel restless a....</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn10" onclick="toggleButtonText(10)">Add</div>
+                    <div id="knowMoreBtn10" onclick="openModal(10)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(11)" onmouseout="hideKnowMore(11)">
+                <img src="bestSellingBook11.jpg" alt="Card Image 11">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Think And Grow Rich</h3>
+                    </div>
+                    <p>Think and Grow Rich has inspired generations of readers...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn11" onclick="toggleButtonText(11)">Add</div>
+                    <div id="knowMoreBtn11" onclick="openModal(11)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(12)" onmouseout="hideKnowMore(12)">
+                <img src="bestSellingBook12.jpg" alt="Card Image 12">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Be Your Own Sunshine</h3>
+                    </div>
+                    <p>Be Your Own Sunshine is a collection of four works by Ja...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn12" onclick="toggleButtonText(12)">Add</div>
+                    <div id="knowMoreBtn12" onclick="openModal(12)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(13)" onmouseout="hideKnowMore(13)">
+                <img src="bestSellingBook13.jpg" alt="Card Image 13">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>Trading Chart Pattern Book</h3>
+                    </div>
+                    <p>According to decades of research, chart patterns wo...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn13" onclick="toggleButtonText(13)">Add</div>
+                    <div id="knowMoreBtn13" onclick="openModal(13)">Know More</div>
+                </div>
+            </div>
+
+            <div class="card" onmouseover="showKnowMore(14)" onmouseout="hideKnowMore(14)">
+                <img src="bestSellingBook14.jpg" alt="Card Image 14">
+                <div class="card-content">
+                    <div class="BookName">
+                        <h3>101 Pencil Control Activity Book For Kids</h3>
+                    </div>
+                    <p>Follow the patterns in this fun activity book especi...</p>
+                    <div class="box1">
+                        <div class="ratings">4.3 <span class="material-symbols-outlined">
+                                star_rate
+                            </span></div>
+                        <div class="discount">10% off</div>
+                    </div>
+                    <div class="box2">
+                        <div class="newPrice">$45</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div id="addBtn14" onclick="toggleButtonText(14)">Add</div>
+                    <div id="knowMoreBtn14" onclick="openModal(14)">Know More</div>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                    <img id="modalImage" alt="Modal Image" style="width: 100%;">
+                    <h2 id="modalTitle">Modal Title</h2>
+                    <p id="modalDescription">Detailed description goes here...</p>
+                    <button onclick="buy()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var currentIndex = 0;
+            var slides = document.querySelectorAll('.slide');
+            var slideshowContainer = document.getElementById('slideshow-container');
+
+            function showNextSlide() {
+                slides[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].style.display = 'block';
+
+                setContainerHeight();
+            }
+
+            function setContainerHeight() {
+                var currentSlide = slides[currentIndex];
+                slideshowContainer.style.height = currentSlide.clientHeight + 'px';
+            }
+
+            function startSlideshow() {
+                setContainerHeight();
+                setInterval(showNextSlide, 3000);
+            }
+
+            function toggleButtonText(cardNumber) {
+                var button = document.getElementById('addBtn' + cardNumber);
+                if (button.innerHTML === 'Add') {
+                    button.innerHTML = 'Added';
+                    button.style.backgroundColor = 'green';
+                } else {
+                    button.innerHTML = 'Add';
+                    button.style.backgroundColor = 'red';
+                }
+            }
+
+            //for hover modal
+            function showKnowMore(cardNumber) {
+                document.getElementById('knowMoreBtn' + cardNumber).style.display = 'block';
+            }
+
+            function hideKnowMore(cardNumber) {
+                document.getElementById('knowMoreBtn' + cardNumber).style.display = 'none';
+            }
+
+            // Define an array of modal titles
+            var modalTitles = [
+                'Dark Psychology Secrets & Manipulation',
+                'Learning How To Fly',
+                'The Art Of War',
+                'The Namesake',
+                'The Pursuit of Reputation',
+                'The Freedom Manifesto: 7 Rules to Live a Life of Your Calling',
+                'Dont Believe Everything You Think',
+                'The Time Machine',
+                'Playing Hard: A Billionaire Playboy, Fake Marriage Romance',
+                'Dopamine Detox : A Short Guide to Remove Distractions and Get Your Brain to Do Hard Things',
+                'Think And Grow Rich',
+                'Be Your Own Sunshine',
+                'Trading Chart Pattern Book',
+                '101 Pencil Control Activity Book For Kids'
+                // Add more titles as needed
+            ];
+
+            var modalDescriptions = [
+                'In relation to the psychological essence of the various kinds of people who prey on others, dark psychology can be seen as studying the human condition. The truth is that there is the potential for any single human being to victimize other people or other living creatures.',
+                'In Learning How to Fly some of his nearly 2, 000 lectures have been compiled. These lectures were addressed to teachers and students in school and beyond. In each one of them he has spoken about preparing oneself best for life, to identify and overcome challenges and how to bring out the best within each individual.',
+                'The premise of The Art of War is that war should be avoided with diplomacy. If it cannot be avoided, it should be fought strategically and psychologically to minimize damage and the wasting of resources. Warfare should only be a last resort and heading into battle is already admitting a kind of defeat.',
+                'The Namesake is the story of a Bengali immigrant family living in the U.S. They name their firstborn Gogol, in a haste, after his fathers favourite author. Living in an Indian family in America; Gogol finds it difficult to be a part of, both, the Indian tradition and the American life.',
+                'This is a new era for public relations. Never before has reputation been so important, and never before so fraught. At a time when thoughtfulness, transparency and authenticity are seen as key tenets, navigating Indias unique cultural, social and economic diversities poses a challenge both for fresh professionals and seasoned leaders.',
+                ' The Freedom Manifesto will give you 7 step-by-step mental models to get liberated to live your best day, daily. Simple, yet profound and relatable, each rule will ensure that your life shapes into the version of your choice.',
+                'uncover the core of psychological suffering and offers insights to effortlessly shape the life you crave. Learn to detach from negativity, embrace love and joy, escape negative thought cycles, and tap into inner wisdom. The message is clear: anyone can attain peace, love, and fulfillment, irrespective of their history.',
+                'This unabridged edition guarantees an immersive experience.A timeless journey through time,Pioneering science fiction classic by H.G. Wells,Unforgettable journey through space,Encounters with future civilizations,Thought-provoking exploration of society and human nature',
+                'A kiss from a stranger.An affair that ripped my heart out.A fake marriage that possessed my soul and crushed my hope of happily ever after.I was running away from a life that was spun by my stepfather to trap me in a series of hollow and joyless moments when I bumped into a stranger. His devilish eyes and brazen charm bewitched me with just one swoony kiss, and I was never the same again.',
+                'In todays world where distractions are everywhere, the ability to focus has become more and more difficult to achieve. We are constantly being stimulated, feeling restless, often without knowing why.When the time comes to work, we suddenly find an excess of other things to do.',
+                'Hills easy-to-follow guidebook to success is based on thirteen simple steps: 1. Desire 2. Faith 3. Autosuggestion 4. Specialized Knowledge 5. Imagination 6. Organized Planning 7. Decision 8. Persistence 9. Power of the Master Mind 10. The Mystery of Sex Transmutation 11. The Subconscious Mind 12. The Brain 13. The Sixth Sense',
+                'James Allen sums up the hows, whys and whats of taming the mind and its infinite energies, of channelizing the power of positive thinking, and striking a balance between the inner world of our thoughts as against the outer world of action.',
+                'Best Trading chart patterns like Head and shoulders, Double top, Double bottom, Rounding bottom, Cup and handle, Wedges Pennant or flags, Ascending triangle, Descending triangle and Symmetrical triangle are explained very well with pictorial representation.',
+                'Follow the arrows and trace the dotted lines, indulge in engaging and fun activities while developing hand-eye coordination and stimulate your motor skills. 101 Pencil Control Activity Book is sure to keep the beginners engaged as they learn through play.'
+                // Add more descriptions as needed
+            ];
+
+            function openModal(cardNumber) {
+                document.getElementById('myModal').style.display = 'flex';
+                // Update modal content based on the cardNumber
+                document.getElementById('modalImage').src = 'bestSellingBook' + cardNumber + '.jpg';
+
+                // Check if the cardNumber is within the bounds of the arrays
+                if (cardNumber >= 1 && cardNumber <= modalTitles.length) {
+                    document.getElementById('modalTitle').innerText = modalTitles[cardNumber - 1];
+                    document.getElementById('modalDescription').innerText = modalDescriptions[cardNumber - 1];
+                } else {
+                    // Handle the case where the cardNumber is out of bounds
+                    console.error('Invalid cardNumber');
+                }
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+
+            function buy() {
+                alert('Buy button clicked!');
+                // Add your buy functionality here
+            }
+
+            startSlideshow();
+        </script>
+    </section>
+
+    <section class="Reviews" id="Reviews">
+        <div class="Reviews">
+            <h1>
+                Words from our Readers
+            </h1>
+            <p>
+                Discover what everyone is talking about, explore the narratives resonating deeply, and let the
+                collective enthusiasm guide you to your next literary adventure.
+            </p>
+            <div class="review1">
+                <img src="person1.jpg" alt="person1" class="img_person">
+                <div class="review">
+                    <div class="personName">
+                        Maria Garcia
+                    </div>
+                    <div class="description">
+                        <b>"A Literary Haven!"</b>:"Bookmart is a sanctuary for book lovers. The curated selection, easy
+                        navigation, and delightful user experience make it my go-to online bookstore. Every click is a
+                        step into a world of literary wonders. Kudos to Bookmart for making my reading journey so
+                        enchanting!"
+                    </div>
+                </div>
+            </div>
+            <div class="review2">
+                <img src="person2.jpg" alt="person2" class="img_person">
+                <div class="review">
+                    <div class="personName">
+                        James Smith
+                    </div>
+                    <div class="description">
+                        "A Treasure Trove of Stories":"Bookmart is a treasure trove for avid readers like me. The
+                        diverse collection of books, from bestsellers to hidden gems, ensures there's something for
+                        every literary taste. Navigating through the website is a joy, and the seamless ordering process
+                        makes my book-buying experience hassle-free."
+                    </div>
+                </div>
+            </div>
+            <div class="review3">
+                <img src="person3.jpg" alt="person3" class="img_person">
+                <div class="review">
+                    <div class="personName">
+                        Catherine Williams
+                    </div>
+                    <div class="description">
+                        "Effortless and Enjoyable":"Bookmart has mastered the art of making book shopping effortless and
+                        enjoyable. The intuitive interface, detailed book descriptions, and quick checkout process have
+                        simplified my online book-buying experience. It's my one-stop destination for literary
+                        escapades."
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="takeReview">
+            <h2>"Contribute Your Voice to Our Bookshelf</h2>
+            <div class="form">
+                <fieldset class="fieldset">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" placeholder="Enter Your Email Adress">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="write">Write Your Review</label><br>
+                    <input type="text" id="write" placeholder="Tell Us What You Think about Your Latest Read">
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>
+            Connect With Us
+        </h2>
+        <div class="links">
+            <div class="number">
+                <p>
+                    contact us
+                </p>
+                <p>
+                    +918745632198
+                </p>
+                <p>
+                    +913254169872
+                </p>
+            </div>
+            <div class="socialHandles">
+                <p>Follow us on our social media handles</p>
+                <a href="http://www.facebook.com/" target="_blank" class="facebook"><img src="Facebook_Logo_Primary.png"
+                        alt=""></a>
+                <a href="http://www.instagram.com/" class="instagram" target="_blank"><img
+                        src="Instagram_Glyph_Gradient.png" alt=""></a>
+                <a href="http://www.whatsapp.com/" target="_blank" class="whatsapp"><img src="Digital_Glyph_Green.png"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="linkedin"><img
+                        src="icons8-linkedin-48.png" alt=""></a>
+            </div>
+
+            <div class="legal-links">
+                <ul>
+                    <li><a href="/terms-and-conditions" target="_blank">Terms & Conditions</a></li>
+                    <li><a href="/privacy-policy" target="_blank">Privacy Policy</a></li>
+                    <li><a href="/cookie-policy" target="_blank">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
